@@ -1,4 +1,3 @@
-libGL
 numpy
 opencv-python-headless
 mediapipe
