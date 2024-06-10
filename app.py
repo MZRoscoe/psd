@@ -25,7 +25,7 @@ run = st.checkbox('Jalankan Kamera')
 FRAME_WINDOW = st.image([])
 
 if run:
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
 
     while run:
         ret, frame = cap.read()
