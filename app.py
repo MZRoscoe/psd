@@ -71,7 +71,7 @@ class SignLanguageTransformer(VideoTransformerBase):
         return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # Convert image back to RGB for display
 
 # Video stream using streamlit-webrtc
-webrtc_streamer(key="sign-language-detector", video_transformer_factory=SignLanguageTransformer)
+webrtc_streamer(key="sign-language-detector", video_processor_factory=SignLanguageTransformer)
 
 # Cleanup MediaPipe hands object on app closure
 hands.close()
