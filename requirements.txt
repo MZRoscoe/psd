@@ -2,3 +2,4 @@ numpy
 opencv-python-headless
 mediapipe
 scikit-learn
+streamlit_webrtc
